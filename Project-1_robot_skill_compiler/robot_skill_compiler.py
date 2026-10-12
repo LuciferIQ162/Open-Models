@@ -103,7 +103,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 1,
    "id": "2f245f32-6a98-42a1-9456-f9ca0597140d",
    "metadata": {},
    "outputs": [
@@ -112,10 +112,10 @@
      "output_type": "stream",
      "text": [
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "I0000 00:00:1786263473.839784    4167 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.\n",
+      "I0000 00:00:1786293412.960087    5061 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.\n",
       "To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.\n",
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "I0000 00:00:1786263476.050166    4167 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"
+      "I0000 00:00:1786293415.356141    5061 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"
      ]
     }
    ],
@@ -130,8 +130,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 4,
    "id": "2ac12117-9638-4bf0-9f8b-f1341765db48",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Robot:\n",
+    "    def __init__(self, action, location):\n",
+    "        self.action = action\n",
+    "        self.location = location"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "eb1490d1-e294-472c-b43e-c7f6b24c2eec",
    "metadata": {},
    "outputs": [],
    "source": []
